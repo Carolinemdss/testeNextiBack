@@ -22,7 +22,7 @@ public class Client {
     private Long id;
 
     private String name;
-    private long cpf;
+    private String cpf;
     private Date birthDate;
 
     public Long getId() {
@@ -41,11 +41,11 @@ public class Client {
         this.name = name;
     }
 
-    public long getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(long cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 

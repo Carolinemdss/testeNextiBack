@@ -26,6 +26,15 @@ public class Product {
     private double price;
     private long quantity;
 
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
     public long getSKU() {
         return SKU;
     }
@@ -66,11 +75,4 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
 }
