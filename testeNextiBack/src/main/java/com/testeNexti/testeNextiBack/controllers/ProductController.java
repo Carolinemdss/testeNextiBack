@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping({"/products"})
 public class ProductController {
@@ -29,7 +29,7 @@ public class ProductController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    @PostMapping(path="/products")
+    @PostMapping
     public Product create(@RequestBody Product product){
         return repository.save(product);
     }
